@@ -54,15 +54,17 @@ function fibonacci (length){
 // --------------------2) Create a function that takes in an object that contains up votes and down votes and returns the end tally.
 
 // a) Create a test with expect statements for each of the variables provided.
-test('calculateVoteTally for votes1', () => {
-    const votes1 = { upVotes: 13, downVotes: 2 }
-    // Expected output: 11
-    expect(calculateVoteTally(votes1)).toEqual(11)
-  })
-  test('calculateVoteTally for votes2', () => {
-    const votes2 = { upVotes: 2, downVotes: 33 }
-    // Expected output: -31
-    expect(calculateVoteTally(votes2)).toEqual(-31)
+describe('calculateVoteTally for votes1', () => {
+    test('for votes1', () => {
+        const votes1 = { upVotes: 13, downVotes: 2 }
+        // Expected output: 11
+        expect(calculateVoteTally(votes1)).toEqual(11)
+    })
+    test('calculateVoteTally for votes2', () => {
+        const votes2 = { upVotes: 2, downVotes: 33 }
+        // Expected output: -31
+        expect(calculateVoteTally(votes2)).toEqual(-31)
+    })
 })
 
 // b) Create the function that makes the test pass.
