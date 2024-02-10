@@ -8,7 +8,7 @@ describe Bike do
   let (:bike) { Bike.new('Trek') }
   it 'has to be real' do
     expect{ bike }.to_not raise_error
-  end
+  endcode
   it 'has a model' do
     expect(bike.model).to eq('Trek')
     expect(bike.model).to be_a(String)
